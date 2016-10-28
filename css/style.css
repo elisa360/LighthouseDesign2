@@ -8,7 +8,6 @@
      height: 0;
 }
 
-
 h1 {
 	font-family: 'Sacramento';
 	color: white;
@@ -24,8 +23,6 @@ h3 {
 	color: white;
 	font-size: 30px;
 	padding: 5px 0 0 50px;
-	
-
 }
 p {
 	font-family: 'Josefin Slab', serif;
@@ -35,10 +32,8 @@ p {
 
 nav {
 	width: 100%;
-	
 	background-color: peachpuff;
 	color: black;
-	
 	font-family: 'Sacramento';
 	font-size: 30px;
 	text-align: center;
@@ -49,17 +44,9 @@ nav {
 
 }
 .lighthouse{
-	padding: 100px 0 0 70px;
+	padding: 80px 0 0 70px;
 }
-.infostrip {
-	width: 50%;
-	height:10%;
-	background-color: #1d9ed1;
-	color: black;
-	float: right;
-	font-size: 20px;
-	
-}
+
 .left {
 	width: 100%;
 	background-color: #F48F8C;
@@ -67,10 +54,6 @@ nav {
 	background-image: url(http://www.netanimations.net/beach_animated.gif);  /*http://i.giphy.com/SUV9ZAV70TQTS.gif */
 	background-size: cover;
 	background-repeat:no-repeat;
-	
-}
-span {
-	padding: 0 5px 0 5px;
 }
 
 .top {
@@ -92,15 +75,7 @@ span {
 	color: white;
 	font-size: 60px;
 }
-.bottom {
-	width: 50%;
-	height: 279px;
-	background-color: red;
-	float: left;
-	align: top;
-	margin: 0 auto;
-	
-}
+
 .one {
 	width: 50%;
 	height: 100%;
@@ -108,8 +83,6 @@ span {
 	margin: auto;
 	float: left;
 	overflow-y: scroll;
-	
-
 }
 
 .two {
@@ -118,47 +91,7 @@ span {
 	background-color: #94bece;
 	float: right;
 	background-image: url("../images/desk.jpg");
-	
 }	
-
-		
-
-/*.three {
-	width: 33%;
-	height: 90%;
-	background-color: purple;
-	float: ;
-	align: top;
-}*/
-
-/* not active    .lighthouse1 {
-	background-image: url("light.jpg");
-}*/
-/* tablets
-@media only screen and (min-width : 481px)
-and (max-width : 678px) {
-
-nav {
-	width: 50%;
-	height:40%;
-	background-color: #94bece;
-	color: black;
-	float: right;
-	
-}
-.bottom {
-	width: 50%;
-	height: 250px;
-	background-color: red;
-	float: left;
-	
-}
-.one {
-	width: 50%;
-	height: 100%;
-	background-color: hotpink;
-	float: left;
-}
 
  /*mobile */
 /* Q&A: still use percentges with responsive? or fixed and then the break points?*/
@@ -168,29 +101,24 @@ and (max-width : 680px) {
 
 .left {
 	width: 100%;
-	height: 515px;
+	height: 600px;
 	background-color: ;
 	float: left;
 	align: top;
-
-	background-image: url(images/"light.jpg"); /* not working ??*/
 }
 .logo{
-	width: 100%;
-	float: left;
+	text-align: center;
 }
 
 nav {
 	width: 100%;
-	
 	background-color: peachpuff;
-	text-align: left;
+	text-align: center;
 	color: black;
 	position: fixed;
 	bottom: 0;
 	left: 0;
-	      
-	
+	clear:all;
 }
 .infostrip {
 	width: 100%;
@@ -198,19 +126,18 @@ nav {
 	background-color: #1d9ed1;
 	color: black;
 	float: right;
-	
+}
+.paddle {
+	clear: all;
+	display: none;
 }
 .top {
 	width: 100%;
-	
 	background-color: black;
 }
-/*.lighthouse{
-	padding: 40px;
-} not doing anyting*/
+
 .bottom {
 	width: 100%;
-	
 	background-color: red;
 	float: left;
 	align: top;
@@ -218,7 +145,6 @@ nav {
 .one {
 	width: 100%;
 	background-color: tomato;
-	
 }
 .two {
 	width: 100%;
@@ -227,12 +153,9 @@ nav {
 	float: right;
 	font-family:'Sacramento';
 	font-size: 60px;
-
-
 }
 
 .video {
 	width: 100%;
-
 }
 

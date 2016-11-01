@@ -7,91 +7,174 @@
      line-height: 0;
      height: 0;
 }
-
+body{
+	width: 100%;
+}
 h1 {
 	font-family: 'Sacramento';
 	color: white;
 	font-size: 60px;
-	padding:10px;
+	padding: 10px 0 10px 10px;
 }
 h2 {
-	font-family: 'Raleway', sans-serif;
+	/*font-family: 'Raleway', sans-serif;*/
+	font-family: 'Josefin Slab', serif;
 	font-size: 30px;
 }
 h3 {
 	font-family: 'Sacramento';
 	color: white;
 	font-size: 30px;
-	padding: 5px 0 0 50px;
+	padding: 5px;
+	
+}
+h4 {
+	color: orangered;
+	font-size: 30px;
+	
 }
 p {
 	font-family: 'Josefin Slab', serif;
 	font-size: 20px;
-	padding: 20px;
+	padding: 10px;
 }
 
 nav {
 	width: 100%;
 	background-color: peachpuff;
-	color: black;
+	
 	font-family: 'Sacramento';
-	font-size: 30px;
 	text-align: center;
 	padding: 20px;
 	position: fixed;
 	bottom: 0;
-	left: 0;
+	
 
 }
-.lighthouse{
-	padding: 80px 0 0 70px;
-}
 
-.left {
+a:link { 
+	text-decoration: none;
+	color: orangered;
+}/*unvisited*/
+a:visited { 
+	color: orangered;
+
+}/*visited links*/
+a:hover{
+	color:lightcoral;
+
+}/*user hover*/
+a:active {
+	color: orangered;
+}/*active links*/
+
+.top {
 	width: 100%;
 	background-color: #F48F8C;
-	height: 570px;
+	height: 622px;
 	background-image: url(http://www.netanimations.net/beach_animated.gif);  /*http://i.giphy.com/SUV9ZAV70TQTS.gif */
 	background-size: cover;
 	background-repeat:no-repeat;
 }
 
-.top {
-	width: 50%;
-	
+.why {
+	width: 100%;
 	background-color: black;
 	float: left;
-	align: top;
-	padding: 10px 0 0 0;
-}
-.logo {
-	float: right;
-	padding: 20px;
-	background-color: orangered;
-}
-
-.toptext {
+	
+	
 	font-family: 'Sacramento';
 	color: white;
 	font-size: 60px;
 }
-
-.one {
+.logo {
 	width: 50%;
-	height: 100%;
-	background-color: tomato;
-	margin: auto;
-	float: left;
-	overflow-y: scroll;
+	margin: 0 auto;
+	padding:10px;
+	background-color: orangered;
+	text-align: center;
 }
 
+.tomato {
+	background-color: tomato;
+	height: 100%
+}
+.explore {
+	width: 50%;
+	padding:10px;	
+	float: left;
+}
+.gallery {
+	background: lightblue;
+	float: left;
+}
 .two {
 	width: 50%;
 	height: 100%;
-	background-color: #94bece;
-	float: right;
-	background-image: url("../images/desk.jpg");
-}	
+	float:right;
+	align: top;
+	padding: 20px;
+}
+
+.bottom {
+	width: 100%;
+	height: 300px;
+	background-color: tomato;
+}
+.extranav {
+	height: 300px;
+}
+/* CAROUSEL */
+.carouselbox {
+  font-family: helvetica,sans-serif;
+  font-size: 14px;
+  width: 100px;
+  position: relative;
+  margin: 1em;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 10px #ccc;
+  overflow: hidden;
+}
+.content {
+  margin: 0;
+  padding: 0;
+}
+.content li {
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+.active {
+  height: 130px;
+}
+.active li {
+  position: absolute;
+  top: 200px;
+}
+.active li.current {
+  top: 30px;
+}
+.active .buttons {
+  padding: 5px 0;
+  background: #eee;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+}
+.carouselbox button {
+  border: none;
+  display: none;
+}
+.active button {
+  display: block;
+} 
+.offscreen {
+  position: absolute;
+  left: -2000px;
+}
 
  /*mobile */
 /* Q&A: still use percentges with responsive? or fixed and then the break points?*/
@@ -99,63 +182,41 @@ nav {
 @media only screen and (min-width : 100px)
 and (max-width : 680px) {
 
-.left {
-	width: 100%;
-	height: 600px;
-	background-color: ;
-	float: left;
-	align: top;
-}
-.logo{
-	text-align: center;
-}
-
-nav {
-	width: 100%;
-	background-color: peachpuff;
-	text-align: center;
-	color: black;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	clear:all;
-}
-.infostrip {
-	width: 100%;
-	height:10%;
-	background-color: #1d9ed1;
-	color: black;
-	float: right;
-}
-.paddle {
-	clear: all;
-	display: none;
-}
 .top {
 	width: 100%;
-	background-color: black;
-}
-
-.bottom {
-	width: 100%;
-	background-color: red;
+	height: 600px;
+	
+	/* changes lighthouse placement*/
 	float: left;
 	align: top;
-}
-.one {
-	width: 100%;
-	background-color: tomato;
 }
 .two {
 	width: 100%;
-	
-	background-color: pink;
-	float: right;
-	font-family:'Sacramento';
-	font-size: 60px;
-}
 
-.video {
+}
+.logo{
+	text-align: center;
 	width: 100%;
 }
 
+nav {
+	
+	background-color: peachpuff;
+	text-align: center;
+	/* fixed nav bar */
+	position: fixed;
+	bottom: 0;
+}
+/*.paddle {
+	clear: all;
+	display: none;
+}*/
+.why {
+	width: 100%;
+	background-color: black;
+}
+.explore {
+	width: 100%;
+	background-color: tomato;
+}
+}

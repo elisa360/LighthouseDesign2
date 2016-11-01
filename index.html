@@ -6,7 +6,7 @@
     	<meta name="keywords" content="one, two, three">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Light Design</title>
+		<title>Lighthouse Design</title>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/reset.css">
@@ -17,71 +17,75 @@
 
 	</head>
 	<body>
-		
-		<!---nav strip to scroll with pages, change location-->
-		
-		<!--Large picture section to the left-->
-		<section >
-			<div class="left"> 
-			
+	
+		<section class="top">
 				<div class="logo">
 					<h2>LIGHTHOUSE DESIGN</h2>
-					<h3> ...making solutions visible...</h3>
+					<h3>...making solutions visible...</h3>
 				</div>
-				<div class="lighthouse">
+			
 				<br><img src= "images/LH1.png" height="520px" width="220px">
-				</div>
-			</div>	
 		</section>
-		<nav>
-			<img class="paddle" src= "images/paddle.png" height="15px" width="100px">
-			...<span style="color: orangered">why</span>
-			<span style="color: orangered">explore</span>
-			<span style="color: orangered">create </span> 
-			<span style="color: orangered">find</span>...
-			<img class="paddle" src= "images/paddle2.png" height="15px" width="100px">
-		</nav>
-		
-		<!--top right section, large image or 3 small, need 3 divs inside?-->
 		
 		
-		<section class="top toptext">
-			<h1><span style="color: orangered">...why...</span><h1>
+		<section class="why">
+			<h1 id=whylink><span style="color: orangered">...why...</span><h1>
 			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula. </p>
 		</section>
-		<section class="top">
+	
+		<section class="tomato">
 			
-		</section>
-		<!--Soild strip, section name, name of client or description
-		<div class="infostrip">
-			<p>LIGHT DESIGN...making solutions visible...</p>
-			
-		</div>
-		<!--bottom right section, large or 3 small, need 3 divs inside-->
-		<section class="bottom">
-			<div class="one">
-				<h1>...explore...</h1>
+			<div class="explore">
+				<h1 id=explorelink>...explore...</h1>
 				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula.
 				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula. </p>
+
 			</div>
+			
 			<div class="two">
-				<h1>...create...</h1>
-
-			</div>
-			<div class="two">
-				<h1>...create...</h1>
-
-			</div>
-			<div class="two">
-				<h1>...create...</h1>
-
-			</div>
-		<!-- wait on this sectin <div class="three">
-		photo
-		</div> -->
-
-
+					<img src= "images/desk.jpg" width="200" height="200" align="left" >
+					<img src= "images/desk.jpg" width="200" height="200" align="right">		
+			</div>	
 		</section>
+			
+	
+		<nav>
+			<img class="paddle" src= "images/paddle.png" height="15px" width="100px">
+			<h4> <a href=#whylink>...why</a>
+			<a href=#explorelink>...explore</a>
+			<a href=#createlink>...create</a>
+			<a href=#gallerylink>...gallery...</a></h4>
+			
+			<img class="paddle" src= "images/paddle2.png" height="15px" width="100px">
+		</nav>
+		<section class="gallery">
+			<h1 ><span style="color:black" id=gallerylink>...gallery...</h1>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula.
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula. </p>
+
+				<div class=extranav>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula.
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula. </p>
+				</div>
+		</section>
+
+	<div class="carouselbox active">
+	 	<div class="buttons">
+	 		<button class="prev">
+	 			<span class="offscreen">Previous</span>
+    		</button>
+    		<button class="next">
+      			<span class="offscreen">Next</span> ▶ 
+    		</button>
+  	</div>
+  <ol class="content">
+    <li class="current">1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+  </ol>
+</div>
+		
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>	
 	</body>
 	</html>	
